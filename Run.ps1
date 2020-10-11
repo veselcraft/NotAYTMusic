@@ -29,13 +29,13 @@ Echo "$alias Searching for album cover"
 
 $coverfilename = ""
 
-foreach ($cover in Get-ChildItem -Path "$path*" -Include *.jpg, *.jpeg, *.png, *.gif | Where-Object { (-not $_.PSIsContainer) }){
+foreach ($cover in Get-ChildItem -Path "$path*" -Include *.jpg, *.jpeg, *.png | Where-Object { (-not $_.PSIsContainer) }){
     $coverfilename = $cover.Name
-    Echo "$alias Found!"
+    Echo "$alias Found $coverfilename!"
 }
 
 if([string]::IsNullOrEmpty($coverfilename)){
-    Echo "$alias Seems like you don't have any .jpg, .jpeg, .png, or .gif file to make vid. Exiting."
+    Echo "$alias Seems like you don't have any .jpg, .jpeg or .png file to make vid. Exiting."
 }else{
     foreach ($filename in $files){
         $media = [TagLib.File]::Create(($path+$filename))
