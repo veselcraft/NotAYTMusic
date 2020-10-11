@@ -9,7 +9,7 @@
 # You will need to install powershell-taglib
 # https://github.com/illearth/powershell-taglib
 #
-# ...and add to "path" ffmpeg
+# ...and add ffmpeg to enviroment variable "path"
 #
 # Author: Veselcraft
 #
