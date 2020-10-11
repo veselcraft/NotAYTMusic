@@ -1,7 +1,9 @@
 # NotAYTMusic
  
-This script does makes a video from audio-file and picture by using FFMpeg and powershell-taglib.
+This script does make a video from audio-file and picture by using FFMpeg and powershell-taglib.
 This can be used to recreate music album as video for simulating YT Music
+
+(fuck my english)
 
 You will need to install [powershell-taglib](https://github.com/illearth/powershell-taglib) and add ffmpeg to enviroment variable "path"
 
